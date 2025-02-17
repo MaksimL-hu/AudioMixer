@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class Menu : MonoBehaviour
+public class VolumeChanger : MonoBehaviour
 {
     public const float ZeroVolume = 0.001f;
     public const float NormalVolume = 1f;
@@ -16,25 +16,7 @@ public class Menu : MonoBehaviour
         ChangeVolume(MasterVolume, value);
     }
 
-    public void ChangeEffectVolume(float value)
-    {
-        ChangeVolume(EffectVolume, value);
-    }
-
-    public void ChangeMusicVolume(float value)
-    {
-        ChangeVolume(MusicVolume, value);
-    }
-
-    public void Mute(bool isMute)
-    {
-        if (isMute)
-            ChangeMasterVolume(ZeroVolume);
-        else
-            ChangeMasterVolume(NormalVolume);
-    }
-
-    private void ChangeVolume(string name, float volume)
+    public void ChangeVolume(string name, float volume)
     {
         _audioMixer.audioMixer.SetFloat(name, Mathf.Log10(volume) * 20);
     }
