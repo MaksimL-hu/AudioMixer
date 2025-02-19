@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,8 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7b5129fb9f6394b82f3c9749cd3e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 955658aa5e14fd746a7477a89b6afe8d, type: 2}
-  _audioMixerParameter: EffectVolume
+  _audioMixerGroup: {fileID: -8560768903398638545, guid: 955658aa5e14fd746a7477a89b6afe8d, type: 2}
   _slider: {fileID: 127549651}
 --- !u!1 &152016572
 GameObject:
@@ -2958,8 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7b5129fb9f6394b82f3c9749cd3e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 955658aa5e14fd746a7477a89b6afe8d, type: 2}
-  _audioMixerParameter: MasterVolume
+  _audioMixerGroup: {fileID: 24300002, guid: 955658aa5e14fd746a7477a89b6afe8d, type: 2}
   _slider: {fileID: 1710097761}
 --- !u!1 &1926599233
 GameObject:
@@ -3437,8 +3434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7b5129fb9f6394b82f3c9749cd3e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24100000, guid: 955658aa5e14fd746a7477a89b6afe8d, type: 2}
-  _audioMixerParameter: MusicVolume
+  _audioMixerGroup: {fileID: 495923646723235980, guid: 955658aa5e14fd746a7477a89b6afe8d, type: 2}
   _slider: {fileID: 2032537876}
 --- !u!1 &2045931658
 GameObject:

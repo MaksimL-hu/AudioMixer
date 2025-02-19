@@ -4,8 +4,7 @@ using UnityEngine.UI;
 
 public class VolumeSlider : MonoBehaviour
 {
-    [SerializeField] private AudioMixer _audioMixer;
-    [SerializeField] private string _audioMixerParameter;
+    [SerializeField] private AudioMixerGroup _audioMixerGroup;
     [SerializeField] private Slider _slider;
 
     private void OnEnable()
@@ -20,6 +19,6 @@ public class VolumeSlider : MonoBehaviour
 
     public void ChangeVolume(float volume)
     {
-        _audioMixer.SetFloat(_audioMixerParameter, Mathf.Log10(volume) * 20);
+        _audioMixerGroup.audioMixer.SetFloat(_audioMixerGroup.name, Mathf.Log10(volume) * 20);
     }
 }
