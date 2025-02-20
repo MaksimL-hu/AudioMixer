@@ -8,15 +8,15 @@ public class ButtonEffect : MonoBehaviour
 
     private void OnEnable()
     {
-        _button.onClick.AddListener(ButtonEffectClick);
+        _button.onClick.AddListener(PlayClip);
     }
 
     private void OnDisable()
     {
-        _button.onClick.RemoveListener(ButtonEffectClick);
+        _button.onClick.RemoveListener(PlayClip);
     }
 
-    private void ButtonEffectClick()
+    private void PlayClip()
     {
         _clip.Play();
     }
